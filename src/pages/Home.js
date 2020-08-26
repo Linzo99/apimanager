@@ -14,7 +14,7 @@ const Home = ({params}) => {
             )
             setApis(res)
         })
-    },[])
+    },[apis])
     
     return(
         <div className="container main">

@@ -16,7 +16,6 @@ import AddModal from './components/AddModal';
 function App() {
   const {currentUser} = useStateValue()
   const connected = currentUser ? true : false
-  console.log('****************** '+connected+' ************************')
   return (
     <Router>
       <div className="App">

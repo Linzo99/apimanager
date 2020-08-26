@@ -11,7 +11,7 @@ const Information = ()=>{
                         <span className="brand-logo align-center teal-text" style={{paddingLeft:20}}>Information</span>
                     </nav>
                     <div className="inf-header">
-                        <span style={{fontSize:12, color:'black'}}>{item.overview}</span>
+                        <span className="grey-text darken-3" style={{fontSize:12, color:'black'}}>{item.overview}</span>
                         <div className="pattern">
                             <h5 className={`${colors[item.type]}`}>{item.type}<span style={{paddingLeft:20, color:"black"}}>{item.pattern}</span></h5>
                             <p className="grey-text text-darken-2"> Little description of this pattern</p>

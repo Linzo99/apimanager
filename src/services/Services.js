@@ -1,10 +1,12 @@
 import {db} from '../firbase'
 import {auth} from '../firbase'
+import {provider} from '../firbase'
 
 export const getApis = ()=>(
 
     db.collection('apis').get()
 )
+
 
 export const addApi = (name, desc) =>{
     db.collection('apis').doc(name)
@@ -14,6 +16,17 @@ export const addApi = (name, desc) =>{
     })
     .catch(error => alert(error.message))
     
+}
+export const signInWithGoogle = () => {
+    auth.signInWithPopup(provider)
+    .then()
+    .catch(error=>console.log(error))
+}
+
+export const signIn = (email, password)=>{
+    auth.signInWithEmailAndPassword(email, password)
+        .then()
+        .catch(error=>alert(error.message))
 }
 
 export const removeApi = (id)=>{
