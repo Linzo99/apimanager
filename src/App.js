@@ -11,7 +11,7 @@ import Home from './pages/Home';
 import Documentation from './pages/Documentation';
 import { PrivateRoute } from './components/PrivateRoute';
 import { useStateValue } from './stateProvider/StateProvider';
-import AddModal from './components/AddModal';
+import AddApiModal from './components/AddApiModal';
 
 function App() {
   const {currentUser} = useStateValue()
@@ -21,11 +21,11 @@ function App() {
       <div className="App">
         <Navbar/>
         <Switch>
-          <PrivateRoute exact path="/login" component={Login} connected={!connected} redirect='/home'/>
-          <PrivateRoute path="/home" component={Home} connected={connected}/>
+          <PrivateRoute path="/login" component={Login} connected={!connected} redirect='/home'/>
+          <PrivateRoute exact path="/home" component={Home} connected={connected}/>
           <PrivateRoute exact path="/doc/:id" component={Documentation} connected={connected}/>
         </Switch> 
-        {connected === true ? (<AddModal/>): (<></>)}
+        {connected === true ? (<AddApiModal/>): (<></>)}
       </div>
     </Router>
    

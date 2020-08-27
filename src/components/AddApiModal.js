@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { addApi } from '../services/Services';
 
-const AddModal = (props) => {
+const AddApiModal = (props) => {
     const [name, setName] = useState("")
     const [desc, setDesc] = useState("")
 
@@ -38,4 +38,4 @@ const AddModal = (props) => {
     )
 }
 
-export default AddModal;
+export default AddApiModal;

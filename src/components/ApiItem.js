@@ -9,7 +9,7 @@ const ApiItem = ({api}) => {
         removeApi(api.id)
     }
     return(
-        <Link className="card col s12 m5 l4 offset-l1 offset-m1" to={`/doc/${api.id}`}>
+        <Link className="card hoverable col s12 m5 l4 offset-l1 offset-m1" to={`/doc/${api.id}`}>
             <p className="card-title">{api.nom}</p>
             <div className="card-content black-text">
                 <p style={{fontSize:13}} className="grey-text text-darken-2">{api.description}</p>

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { auth } from '../firbase';
 import { signIn, signInWithGoogle } from '../services/Services';
 
 const LoginForm = ({params}) => {

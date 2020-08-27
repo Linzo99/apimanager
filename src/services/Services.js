@@ -23,6 +23,12 @@ export const signInWithGoogle = () => {
     .catch(error=>console.log(error))
 }
 
+export const saveToDb = (path, obj) => {
+    db.collection(path).add(obj)
+    .then(alert('Requete Ajoutee'))
+    .catch(error => console.log(error))
+}
+
 export const signIn = (email, password)=>{
     auth.signInWithEmailAndPassword(email, password)
         .then()

@@ -9,15 +9,10 @@ export const colors={
 }
 
 const CollapsibleItem = ({name, content}) => {
-    const traitement = (e) => {
-        e.preventDefault()
-        e.stopPropagation()
-    }
     return(
         <li>
             <div className={`collapsible-header ${name && colors[name]} grey lighten-4`}>
                 <span>{name}</span>
-                <a onClick={(e)=>traitement(e)} className="btn-floating pulse blue"><i className="material-icons white-text center">add</i></a>
             </div>
             <div className="collapsible-body">
                 {content && content.map(cont => (
@@ -41,7 +36,7 @@ const Item = ({item}) =>{
     return(
         <div className="item" onClick={(e)=>handleClick(e)}>
             <span className={`type ${colors[item.type]}`}>{item.type}</span>
-            <span className="overview grey-text text-darken-2">{item.overview}</span>
+            <a href="#info" className="overview grey-text text-darken-2">{item.overview}</a>
         </div>
     )
 }

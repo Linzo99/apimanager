@@ -11,14 +11,15 @@ const SideNav = (props) => {
         const ele = document.querySelector('.sidenav')
         M.Sidenav.init(ele)
     },[])
+
     return(
         <ul id="mobile-menu" className="sidenav grey darken-4">
             <li>
                 <div className="user-view">
                     <div className="backgroud">
-                        <img src="" className="responsive-img"/>
+                        <img src="" alt="" className="responsive-img"/>
                     </div>
-                    <img className="circle" src={currentUser.photoURL}/>
+                    <img alt="" className="circle" src={currentUser.photoURL}/>
                     <span className="white-text name">{currentUser.displayName}</span>
                     <span className="white-text email">{currentUser.email}</span>
                 </div>

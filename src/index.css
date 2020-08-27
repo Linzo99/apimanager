@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -107,4 +108,14 @@ table tr:nth-child(even){
 }
 .overview{
   padding-left: 15px;
+}
+
+#params, #query{
+  border:1px solid rgba(0, 0, 0, 0.2);
+  padding:5px;
+  margin-bottom: 3px;
+}
+
+.param{
+  border:1px solid rgba(0, 0, 0, 0.2);
 }
