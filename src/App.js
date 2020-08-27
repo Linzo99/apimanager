@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/navbar/Navbar'
-import SideNav from './components/navbar/SideNav';
 import {
   BrowserRouter as Router,
   Switch,

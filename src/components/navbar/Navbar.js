@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link, NavLink} from 'react-router-dom'
-import { auth } from '../../firbase'
 import SideNav from './SideNav'
 import { useStateValue } from '../../stateProvider/StateProvider';
 import { logout } from '../../services/Services'

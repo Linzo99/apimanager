@@ -1,5 +1,4 @@
 import React from 'react';
-import { useStateValue } from '../stateProvider/StateProvider';
 import { colors } from './Collapsible'
 
 const Information = ()=>{
